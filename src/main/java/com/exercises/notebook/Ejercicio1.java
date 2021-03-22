@@ -2,7 +2,7 @@ package com.exercises.notebook;
 
 public class Ejercicio1 {
     public static void main(String[] args) {
-        Ejercicio1 ejercicio1 = new Ejercicio1(1);
+        Ejercicio1 ejercicio1 = new Ejercicio1();
         System.out.println("The first valur is: " + ejercicio1.getFirstValue());
         System.out.println("The second valur is: " + ejercicio1.getSecondValue());
         ejercicio1.setSecondValue(2);
@@ -12,12 +12,7 @@ public class Ejercicio1 {
     }
 
     private Integer firstValue = 1;
-    private Integer secondValue;
-
-    public Ejercicio1(Integer firstValue) {
-        this.firstValue = firstValue;
-        this.secondValue = firstValue;
-    }
+    private Integer secondValue = firstValue;
 
     public Integer getFirstValue() {
         return firstValue;
