@@ -10,7 +10,7 @@ public class Ejercicio12 {
         int pos = 1;
         long num = 0;
         long prev = 1;
-        while (pos < 51) {
+        while (pos <= 51) {
             System.out.println(num);
             long sumPrevious = num + prev;
             prev = num;
