@@ -13,15 +13,11 @@ public class Ejercicio3 {
         this.radius = radius;
     }
 
-    public Integer getRadius() {
-        return radius;
-    }
-
     public Double volume() {
-        return (4.0/3.0) * Math.PI * getRadius() * 3;
+        return (4.0 / 3.0) * Math.PI * Math.pow(this.radius, 3);
     }
 
     public Double surface() {
-        return 4 * Math.PI * getRadius() * 2;
+        return 4 * Math.PI * Math.pow(this.radius, 2);
     }
 }
