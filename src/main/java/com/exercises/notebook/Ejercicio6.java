@@ -5,14 +5,18 @@ import java.util.Scanner;
 public class Ejercicio6 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
+        /*Pedimos al usuario que introduzca un peso y una altura*/
         System.out.println("Write your weight (kg): ");
         Integer weight = input.nextInt();
         System.out.println("Write your height (cm): ");
         Integer height = input.nextInt();
 
+        /*Llamamos a la función y mostramos el resultado por pantalla*/
         System.out.println(Ejercicio6.imc(weight, height));
     }
 
+    /*Método para calcular el IMC y que devulve un string para cada rango*/
     public static String imc(Integer weight, Integer height) {
         double imc = (double)weight / (((double)height / 100) * 2);
 

@@ -10,9 +10,11 @@ public class Ejercicio22 {
         Scanner input = new Scanner(System.in);
         Ejercicio22 ejercicio22 = new Ejercicio22();
 
+        /*Pedimos un número por consola*/
         System.out.println("Write a number:");
         Integer number = input.nextInt();
 
+        /*Mostramos el resultado por consola*/
         System.out.println("The prime dividers of number " + number + " are:");
         System.out.println(ejercicio22.primeDividers(number));
     }

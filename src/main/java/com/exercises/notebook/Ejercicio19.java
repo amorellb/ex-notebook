@@ -7,25 +7,21 @@ public class Ejercicio19 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        /*Pedimos los tamaños de los arrays por consola*/
         System.out.println("How many numbers would you add to the first array?");
         int v1Length = input.nextInt();
         System.out.println("How many numbers would you add to the second array?");
         int v2Length = input.nextInt();
 
+        /*Inicializamos los dos arrays con el tamaño dado por el usuario*/
         Integer[] v1 = new Integer[v1Length];
         Integer[] v2 = new Integer[v2Length];
 
-        for (int i = 0; i < v1Length; i++) {
-            System.out.println("Add a number to the first array:");
-            v1[i] = input.nextInt();
-        }
+        /*Añadimos los valores a los arrays*/
+        Ejercicio18.addValues(input, v1Length, v2Length, v1, v2);
 
-        for (int i = 0; i < v2Length; i++) {
-            System.out.println("Add a number to the second array:");
-            v2[i] = input.nextInt();
-        }
-
-        Integer[] v = new Integer[v1Length];
+        /*Añadimos los valores del array v1 y del array v2 al array v, una vez sumados los valores*/
+        Integer[] v;
         if (v1Length >= v2Length) {
             v = new Integer[v1Length];
             for (int i = 0; i < v1Length; i++) {
@@ -46,6 +42,7 @@ public class Ejercicio19 {
             }
         }
 
+        /*Mostramos los resultados por consola*/
         System.out.println("First array:");
         System.out.println(Arrays.toString(v1));
         System.out.println("Second array:");
